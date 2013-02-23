@@ -1,7 +1,7 @@
 #PyBot.py
 #03.02.2013 by Georg Dorndorf under Creative Common License
 #
-#Feel free to enhance the code or rewrite it but please alwas mention me.
+#Feel free to enhance the code or rewrite it but please always mention me.
 
 import pickle, random
 
@@ -9,7 +9,7 @@ import pickle, random
 a = open('lexicon','rb')
 successorlist = pickle.load(a)
 a.close()
-# returns a word you see... but read the code if you're interested
+# 
 def nextword(a):
     if a in successorlist and len(successorlist[a]) > 0:
         return random.choice(successorlist[a])
@@ -17,14 +17,14 @@ def nextword(a):
         return 'ein'
 speech=''
 
-# initiate the whole programm with a while loop
+# initiate the whole programm 
 while speech != 'quit':
-    speech = raw_input('>')                # waiting for user input
-    s = random.choice(speech.split())      # works with user input
+    speech = raw_input('>')                # 
+    s = random.choice(speech.split())      # 
     response = ''                          #
-# initiate the response part    
+#   
 	while True:
-        neword = nextword(s)              # feel free to read the code and interpret on your own ;) 
+        neword = nextword(s)              # 
         response += ' ' + neword          # 
         s = neword						  #
         if neword[-1] in '.':
