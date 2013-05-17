@@ -1,7 +1,7 @@
 #PyBotTrainer
 #03.02.2013 by Georg Dorndorf Licensed under the Creative Common License
 #
-#Feel free to copy and rewrite the code but please mention my name.
+#Feel free to copy and rewrite the code but please mention me.
 
 import pickle, sys
 
